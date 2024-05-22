@@ -1,5 +1,5 @@
 plugins {
-    id("com.android.application") version "8.4.0" apply false
+    alias(libs.plugins.android.application)
 }
 
 android {
@@ -38,6 +38,7 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     testImplementation(libs.junit)
+
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
